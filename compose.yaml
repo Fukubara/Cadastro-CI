@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: "postgres:alpine"
+    ports:
+     - 5432:5432/tcp
+    environment:
+      - POSTGRES_PASSWORD=1qaz!WSX
+      - POSTGRES_USER=Administrador
+      - POSTGRES_DB=Logins
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

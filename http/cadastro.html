@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="component-1" method="post" action="localhost:5000/cadastrarPessoa">
+        <img src="./Logo.png" alt="" id="logo">
+        <div class="ob-forms col2">
+            <label class="cpf">CPF</label>
+            <input class="frame name" placeholder="CPF" oninput="criaMascara('cpf')" id="cpfInput" maxlength="11">
+        </div>
+        <div class="ob-forms col3">
+            <label class="nome-fantasia">Nome</label>
+            <input class="frame name" placeholder="Nome" id="nome"/>
+        </div>
+        <div class="ob-forms col2">
+            <label class="email">Email</label>
+            <input class="frame name" placeholder="Email" id="email"/>
+        </div>
+        <div class="ob-forms col1">
+            <label class="label">Telefone</label>
+            <input class="frame name" placeholder="Telefone"  oninput="criaMascara('telefone')" id="telefoneInput" maxlength="11">
+        </div>
+        <div class="ob-forms col2">
+            <label class="logradouro">Logradouro</label>
+            <input class="frame name" placeholder="Logradouro" id="logradouro"/>
+        </div>
+        <div class="ob-forms col1">
+            <label class="cep">Cep</label>
+            <input class="frame name" placeholder="Cep" id="cep"/>
+        </div>
+        <div class="ob-forms col2">
+            <label class="cidade">Cidade</label>
+            <input class="frame name" placeholder="Cidade" id="cidade"/>
+        </div>
+        <div class="ob-forms col1">
+            <label class="Numero">Numero</label>
+            <input class="frame name" placeholder="Numero" id="numero"/>
+        </div>
+        <div class="ob-forms col2">
+            <label class="complemento">Complemento</label>
+            <input class="frame name" placeholder="Complemento" id="complemento"/>
+        </div>
+        <div class="ob-forms col1">
+            <label class="Estado">Estado</label>
+            <input class="frame name" placeholder="Estado" id="estado"/>
+        </div>
+        <div class="ob-forms col3 btns">
+            <button class="ob-forms-buttons salvar">
+                <div class="name2">Salvar</div>
+            </button>
+            <button class="ob-forms-buttons voltar" id="voltar">
+                <div class="name2">Cancelar</div>
+            </button>
+        </div>
+        
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
